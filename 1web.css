@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*background: linear-gradient(to right, #dfe9f3, #ffffff);*/
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .card img {
+        width: 50%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .card-content {
+        padding: 20px;
+        width: 50%;
+    }
+}
+
+.Category {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    color: #2196f3;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.category-card p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .category-card {
+        width: 45%;
+    }
+}
+
+.Reviews {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    color: #2196f3;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.stars {
+    color: #fbc02d;
+    font-size: 18px;
+}
+
+.testimonial-card p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 90%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------- NAVBAR ----------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu-btn div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+/* LOGO */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* RIGHT ICONS */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-icons div i {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+/* ----------- SIDEBAR ----------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .close-btn {
+    text-align: right;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 15px;
+}
+
+.dropdown-content a {
+    font-size: 14px;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-icons {
+        gap: 15px;
+    }
+}
+
+
+/* ======= LOGIN POPUP ======= */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.login-popup.active {
+    display: flex;
+}
+
+.login-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.login-box h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008cff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 🟦 Section Wrapper */
+.bestseller-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 🟩 Heading Styling */
+.bestseller-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* 🔷 Highlight Text */
+.bestseller-section h2 span {
+  color: #2196f3;
+}
+
+/* 🟨 Subtext Styling */
+.bestseller-section .subtext {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* 🧱 Flexbox Container for Cards */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 📦 Individual Product Card */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 250px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+/* 🧲 Hover Effect */
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🖼 Product Image */
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* 🧾 Product Content Wrapper */
+.product-card .content {
+  padding: 15px;
+}
+
+/* 🏷 Product Title */
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+/* ⭐ Rating Stars */
+.stars {
+  color: #fbc02d;
+  font-size: 16px;
+}
+
+/* 🔢 Rating Number */
+.rating {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 💰 Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000;
+}
+
+/* ⚙ Range and Motor Details */
+.details {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* 🛒 Add to Cart Button */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 0 0 16px 16px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* 🖱 Hover Effect for Button */
+.btn:hover {
+  background: #f0f0f0;
+}
+
+/* 📱 Responsive Layout for Mobile */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+  }
+}
+
+/*Hamare Partner Brands Hain*/
+.partner-brands {
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* 🌐 Footer Main Styling */
+.ebike-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+/* 🔷 Top Footer Grid */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔸 Each Column */
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #00bcd4;
+  margin-bottom: 12px;
+}
+
+.footer-col p,
+.footer-col ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #00e5ff;
+}
+
+/* 🔻 Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #999;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+}

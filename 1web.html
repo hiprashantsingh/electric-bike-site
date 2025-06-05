@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="1web.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">✖</div>
+        <a href="#">Home</a>
+        <div class="dropdown" id="dropdown">
+            <div class="dropdown-toggle" onclick="toggleDropdown()">Electric Cycles ▼</div>
+            <div class="dropdown-content">
+                <a href="#">Under ₹20,000</a>
+                <a href="#">Under ₹30,000</a>
+                <a href="#">For Boys</a>
+                <a href="#">For Girls</a>
+                <a href="#">For Women</a>
+            </div>
+        </div>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <!-- Menu Button -->
+        <div class="menu-btn" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <span><strong>Menu</strong></span>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <i class="fas fa-biking"></i>
+            <div style="font-size: 12px;">Logo</div>
+        </div>
+
+        <!-- Right Icons -->
+        <div class="nav-icons">
+            <div>
+                <i class="fas fa-search"></i>
+                <span><strong>Search</strong></span>
+            </div>
+            <!-- Navigation में यूजर आइकन -->
+            <div class="nav-icons">
+                <div class="user-icon" onclick="toggleLoginPopup()">
+                    <i class="fas fa-user"></i>
+                    <span><strong>User</strong></span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-shopping-cart"></i>
+                <span><strong>Cart</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="card">
+            <img src="image/Ecommerce Website Bike shop.jpg" alt="Hero Image">
+            <div class="card-content">
+                <h1>Welcome to Our Website</h1>
+                <p>Explore amazing products and services crafted just for you.</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="Category">
+        <h2>Apni <span>Category</span> Chunein</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/150" alt="For Men">
+                <p>For Men</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/150" alt="For Women">
+                <p>For Women</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/150" alt="For Kids">
+                <p>For Kids</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/150" alt="Budget Friendly">
+                <p>Budget Friendly</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/150" alt="Premium Range">
+                <p>Premium Range</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Reviews">
+        <h2>Hamare <span>Happy Customers</span> Kya Kehte Hain</h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/60" alt="Rohan">
+                <h3>Rohan S.</h3>
+                <div class="stars">★★★★★</div>
+                <p>"EMotorRide ki bike se daily commute easy ho gaya! Battery backup bhi mast hai."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/60" alt="Priya">
+                <h3>Priya K.</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Excellent customer service and fast delivery. Bike quality is superb. Thank you EMotorRide!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/60" alt="Amit">
+                <h3>Amit G.</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Weekend rides ab aur bhi fun hain. Highly recommended for anyone looking for a quality e-bike."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN POPUP -->
+    <div class="login-popup" id="loginPopup">
+        <div class="login-box">
+            <div class="close-btn" onclick="toggleLoginPopup()">✖</div>
+            <h2>Login</h2>
+            <input type="text" placeholder="Email or Username" />
+            <input type="password" placeholder="Password" />
+            <button>Login</button>
+        </div>
+    </div>
+
+    <!-- 🔥 Bestseller E-Bikes Section -->
+<section class="bestseller-section">
+
+  <!-- 🔷 Heading -->
+  <h2>Sabse Zyada <span>Bikne Wale</span> E-Bikes</h2>
+
+  <!-- 🔹 Sub Text -->
+  <p class="subtext">Hamare customers ke favorite e-bikes. Top quality, best performance guaranteed.</p>
+
+  <!-- 📦 Product Cards Container -->
+  <div class="product-cards">
+
+    <!-- 🔸 Card 1 -->
+    <div class="product-card">
+      <img src="image/Ecommerce Website Bike shop.jpg" alt="Urban Glide X1" />
+      <div class="content">
+        <h3>Urban Glide X1</h3>
+        <div class="stars">★★★★★ <span class="rating">(4.5)</span></div>
+        <div class="price">₹75,999</div>
+        <div class="details">Range: 70 KM | Motor: 250W</div>
+      </div>
+      <div class="btn">Add to Cart</div>
+    </div>
+
+    <!-- 🔸 Card 2 -->
+    <div class="product-card">
+      <img src="image/Ecommerce Website Bike shop.jpg" alt="TrailBlazer Pro" />
+      <div class="content">
+        <h3>TrailBlazer Pro</h3>
+        <div class="stars">★★★★★ <span class="rating">(4.8)</span></div>
+        <div class="price">₹89,999</div>
+        <div class="details">Range: 90 KM | Motor: 350W</div>
+      </div>
+      <div class="btn">Add to Cart</div>
+    </div>
+
+    <!-- 🔸 Card 3 -->
+    <div class="product-card">
+      <img src="image/Ecommerce Website Bike shop.jpg" alt="EcoRide Lite" />
+      <div class="content">
+        <h3>EcoRide Lite</h3>
+        <div class="stars">★★★★☆ <span class="rating">(4.2)</span></div>
+        <div class="price">₹52,999</div>
+        <div class="details">Range: 50 KM | Motor: 250W</div>
+      </div>
+      <div class="btn">Add to Cart</div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Partner Brands Section -->
+    <div class="partner-brands">
+        <h2>Hamare <span>Partner Brands</span> Hain</h2>
+        <div class="brand-logos">
+            <img src="https://via.placeholder.com/100x50" alt="Brand 1">
+            <img src="https://via.placeholder.com/100x50" alt="Brand 2">
+            <img src="https://via.placeholder.com/100x50" alt="Brand 3">
+            <img src="https://via.placeholder.com/100x50" alt="Brand 4">
+        </div>
+    </div>
+
+    <!-- 🚲 Electric Bicycle Website Footer -->
+<footer class="ebike-footer">
+
+  <!-- 🔹 Top Footer Grid -->
+  <div class="footer-top">
+
+    <!-- 🔸 Company Info -->
+    <div class="footer-col">
+      <h3>EMotorRide</h3>
+      <p>India’s trusted electric bicycle guide. Compare, choose & ride electric with confidence.</p>
+    </div>
+
+    <!-- 🔸 Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Top E-Bikes</a></li>
+        <li><a href="#">Under ₹50,000</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- 🔸 Categories -->
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Men’s Bikes</a></li>
+        <li><a href="#">Women’s Bikes</a></li>
+        <li><a href="#">Fat Tyre</a></li>
+        <li><a href="#">Long Range</a></li>
+      </ul>
+    </div>
+
+    <!-- 🔸 Contact Info -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:support@emotorride.in">support@emotorride.in</a></li>
+        <li>Call: +91 9876543210</li>
+        <li>Uttar Pradesh, India</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 🔻 Bottom Footer -->
+  <div class="footer-bottom">
+    <p>© 2025 EMotorRide. All rights reserved. | Made with ❤️ by Prashant Singh</p>
+  </div>
+
+</footer>
+
+    <script src="1web.js"></script>
+</body>
+
+</html>
